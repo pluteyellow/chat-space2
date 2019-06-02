@@ -15,7 +15,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false|
+|name|string|index: true, null: false, unique: true|
 |email|string|null: false, unique: true|
 
 ### Association
@@ -38,7 +38,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|text|text|null: false|
+|text|text|------|
 |image|string|-------|
 |user_id|references|foreign_key: true|
 |group_id|references|foreign_key: true|
