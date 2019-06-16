@@ -1,0 +1,59 @@
+.wrapper
+  .side-bar
+    .side-bar__chat--header
+      .side-bar__chat--header-box
+        %p.side-bar__username
+          fff
+        
+        %ul.user-menu
+          %li.user-menu__item
+            =link_to "", class: "user-menu__item__link" do
+              = fa_icon 'edit', class: "user-menu__item__edit"
+          %li.user-menu__item
+            =link_to "", class: "user-menu__item__link" do
+              = fa_icon 'gear', class: "user-menu__item__gear"
+
+    .side-bar__message--groups
+      .side-bar__message--groups-box
+        %p.side-bar__groupname
+          kkk
+        %p.side-bar__latest-message
+          ppp
+      .side-bar__message--groups-box
+        %p.side-bar__groupname
+          nnn
+        %p.side-bar__latest-message
+          yyy
+     
+  .content
+    .content__header
+      .content__header--box
+        %p.content__chatgroup
+          kkk
+
+        %p.content__members
+          members: fff mmm ggg ddd
+
+      %p.edit-btn
+        Edit
+
+    .content__messages
+      .content__messages--box
+        .content__messages--box-upload-data
+          %p.content__username
+            toukousya
+          %p.content__upload-date
+            2019/6/16(日) 12:46:00
+        .content__messages--box-latest-message
+          %p.content__latest-message
+            hallo
+
+    .content__message-form
+      .content__message-form--box
+        %input.form__message
+        .form__mask
+          %label.form__mask__image.upload-label{for: "upload-icon"}
+            = fa_icon 'picture-o', class: 'icon'
+            %input.hidden{type: 'file', id: "upload-icon"}
+         
+        %input.send-btn{type: "submit", value: "Send"}
