@@ -1,0 +1,86 @@
+*{
+  box-sizing: border-box;
+}
+
+.flash{
+  background-color: #38aef0;
+  color: white;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.side-bar{
+
+  &__chat--header{
+    background-color: #253141;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    width: 300px;
+
+    &-box{
+      display: flex;
+      justify-content: space-between;
+      width: 260px;
+      font-weight: bold;
+    }
+  }
+
+  &__username {
+      color: #FFFFFF;
+      font-size: 16px;
+      font-weight: bold;
+  }
+
+  .user-menu{
+  
+  display: flex;
+
+    &__item{
+      margin-left: 0.3rem;
+      
+      &__edit{
+        color: #FFFFFF;
+      }  
+      &__gear{
+        color: #FFFFFF;
+      }  
+    }
+  }
+
+  &__message--groups{
+    height: calc(100vh - 100px);
+    background-color: #2f3e51;
+    padding: 20px 20px 0;
+    overflow: scroll;
+    width: 300px;
+
+    &-box{
+      margin-bottom: 40px;
+      
+    }
+
+  }
+
+   &__groupname{
+    color: #FFFFFF;
+    font-size: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+   }
+   
+   &__latest-message{
+    color: #FFFFFF;
+    font-size: 11px;
+    margin-bottom: 5px;
+    font-weight: bold;
+   }
+    
+  
+    
+}
+
