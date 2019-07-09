@@ -3,14 +3,14 @@
     .side-bar__chat--header
       .side-bar__chat--header-box
         %p.side-bar__username
-          fff
+          = current_user.name
         
         %ul.user-menu
           %li.user-menu__item
             =link_to "", class: "user-menu__item__link" do
               = fa_icon 'edit', class: "user-menu__item__edit"
           %li.user-menu__item
-            =link_to "", class: "user-menu__item__link" do
+            =link_to edit_user_path(current_user), class: "user-menu__item__link" do
               = fa_icon 'gear', class: "user-menu__item__gear"
 
     .side-bar__message--groups
@@ -55,5 +55,5 @@
           %label.form__mask__image.upload-label{for: "upload-icon"}
             = fa_icon 'picture-o', class: 'icon'
             %input.hidden{type: 'file', id: "upload-icon"}
-         
+           
         %input.send-btn{type: "submit", value: "Send"}
